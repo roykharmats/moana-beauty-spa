@@ -18,16 +18,16 @@
         theme: {
           extend: {
             colors: {
-              'moana-cream': '#F9F7F2',
+              primary: '#C5A358', // Moana Gold
+              secondary: '#F7F5F2', // Light Cream
+              accent: '#C9A66B',
+              textDark: '#1E1E1E',
+              textLight: '#FFFFFF',
+              // Retaining legacy aliases for compatibility with existing complex components
+              'moana-cream': '#F7F5F2',
               'moana-gold': '#C5A358',
-              'moana-black': '#1A1A1A',
+              'moana-black': '#1E1E1E',
               'moana-dark-green': '#2C3E30',
-              // Aliases for compatibility with the provided guide structure
-              'primary': '#C5A358',
-              'secondary': '#F9F7F2',
-              'accent': '#b08d45',
-              'textDark': '#1A1A1A',
-              'textLight': '#FFFFFF'
             },
             fontFamily: {
               serif: ['"Cormorant Garamond"', 'serif'],
@@ -55,8 +55,8 @@
         scroll-behavior: smooth;
       }
       body {
-        background-color: #F9F7F2;
-        color: #1A1A1A;
+        background-color: #F7F5F2; /* secondary */
+        color: #1E1E1E; /* textDark */
       }
       .fade-enter {
         opacity: 0;

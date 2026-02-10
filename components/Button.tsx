@@ -20,7 +20,8 @@ export const Button: React.FC<ButtonProps> = ({
   const baseStyles = "inline-flex items-center justify-center px-8 py-3 text-sm tracking-widest uppercase transition-all duration-300 font-serif font-medium";
   
   const variants = {
-    primary: "bg-moana-black text-white hover:bg-moana-gold border border-transparent",
+    // Updated primary to Gold for high-end CTA visibility
+    primary: "bg-moana-gold text-white hover:bg-moana-black border border-transparent hover:shadow-lg",
     outline: "bg-transparent border border-moana-black text-moana-black hover:bg-moana-black hover:text-white",
     text: "bg-transparent text-moana-black underline hover:text-moana-gold p-0"
   };
