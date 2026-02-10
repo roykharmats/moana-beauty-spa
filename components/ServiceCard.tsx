@@ -29,7 +29,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
           {service.title}
         </h3>
         
-        <p className="text-gray-500 text-sm font-light leading-relaxed mb-8 line-clamp-3 flex-grow">
+        <p className="text-gray-500 text-sm font-light leading-relaxed mb-8 flex-grow">
           {service.description}
         </p>
         

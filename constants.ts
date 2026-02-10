@@ -13,7 +13,7 @@ export const SERVICES: Service[] = [
   {
     id: 's1',
     title: 'Natural Skin Tightening',
-    description: 'A non-invasive treatment stimulating collagen production for a naturally lifted look.',
+    description: 'Harnessing advanced radio-frequency technology to stimulate deep collagen production. This non-invasive ritual firms, lifts, and contours the facial structure, revealing a naturally youthful elasticity without downtime.',
     price: '$250',
     duration: '60 min',
     imageUrl: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&auto=format&fit=crop',
@@ -22,7 +22,7 @@ export const SERVICES: Service[] = [
   {
     id: 's2',
     title: 'Deep Tissue Restoration',
-    description: 'Targeted therapeutic massage to release chronic tension and restore mobility.',
+    description: 'A powerful therapeutic intervention targeting the deepest layers of muscle tissue. Using slow, firm strokes and concentrated pressure, this massage releases chronic tension and restores full mobility to a weary body.',
     price: '$180',
     duration: '90 min',
     imageUrl: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop',
@@ -31,7 +31,7 @@ export const SERVICES: Service[] = [
   {
     id: 's3',
     title: 'Hydra-Glow Facial',
-    description: 'Deep cleansing and hydration using advanced serums for an immediate radiance boost.',
+    description: 'An immersive hydration ritual using a vortex-fusion delivery system. Antioxidant-rich serums, hyaluronic acid, and peptides are infused directly into the skin, providing an instant, glass-like radiance and deep cellular nourishment.',
     price: '$195',
     duration: '60 min',
     imageUrl: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=800&auto=format&fit=crop',
@@ -40,7 +40,7 @@ export const SERVICES: Service[] = [
   {
     id: 's4',
     title: 'Volcanic Stone Therapy',
-    description: 'Warm basalt stones melt away tension and promote profound relaxation.',
+    description: 'Surrender to the grounding warmth of smooth, heated basalt stones gathered from volcanic riverbeds. The heat penetrates deep into the musculature, melting away stress and harmonizing the body’s energy flow.',
     price: '$210',
     duration: '75 min',
     imageUrl: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800&auto=format&fit=crop',
@@ -49,7 +49,7 @@ export const SERVICES: Service[] = [
   {
     id: 's5',
     title: 'Holistic Scalp Treatment',
-    description: 'A sensory experience focusing on cranial pressure points and aromatic oils.',
+    description: 'A transcendental sensory journey focusing on cranial pressure points. Warm, aromatic wild-crafted oils are massaged into the scalp and hair, relieving mental fatigue and promoting a state of meditative calm.',
     price: '$95',
     duration: '45 min',
     imageUrl: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800&auto=format&fit=crop',
@@ -58,7 +58,7 @@ export const SERVICES: Service[] = [
   {
     id: 's6',
     title: 'Lymphatic Drainage',
-    description: 'Gentle, rhythmic strokes to encourage lymph flow and reduce water retention.',
+    description: 'A gentle, rhythmic technique designed to mimic the body’s natural pulse. Feather-light strokes encourage the movement of lymph fluids, effectively reducing water retention, detoxifying the system, and boosting immune function.',
     price: '$160',
     duration: '60 min',
     imageUrl: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&auto=format&fit=crop',
