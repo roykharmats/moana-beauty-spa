@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moana Beauty | Luxury Spa in Waikiki</title>
+    <title>Moana Beauty Spa | Luxury Facials & Skin Tightening Honolulu</title>
+    <meta name="description" content="Moana Beauty Spa in Waikiki offers luxury facials, skin tightening, and non-invasive treatments. Book online today.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,14 +21,29 @@
               'moana-cream': '#F9F7F2',
               'moana-gold': '#C5A358',
               'moana-black': '#1A1A1A',
-              'moana-dark-green': '#2C3E30', // Adding an earthy accent similar to the screenshot
+              'moana-dark-green': '#2C3E30',
+              // Aliases for compatibility with the provided guide structure
+              'primary': '#C5A358',
+              'secondary': '#F9F7F2',
+              'accent': '#b08d45',
+              'textDark': '#1A1A1A',
+              'textLight': '#FFFFFF'
             },
             fontFamily: {
               serif: ['"Cormorant Garamond"', 'serif'],
               sans: ['"Inter"', 'sans-serif'],
             },
             backgroundImage: {
-              'hero-pattern': "url('https://picsum.photos/id/119/1920/1080')", // Moody abstract/nature texture
+              'hero-pattern': "url('https://picsum.photos/id/119/1920/1080')",
+            },
+            animation: {
+                fadeIn: 'fadeIn 1s ease-in-out forwards',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0', transform: 'translateY(10px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                }
             }
           }
         }

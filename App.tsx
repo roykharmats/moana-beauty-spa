@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { Header } from './components/Header';
-import { ServiceCard } from './components/ServiceCard';
+import { Hero } from './components/Hero';
+import { Services } from './components/Services';
 import { Testimonials } from './components/Testimonials';
 import { Footer } from './components/Footer';
+import { BookingButton } from './components/BookingButton';
 import { Button } from './components/Button';
-import { SERVICES, TESTIMONIALS, SQUARE_BOOKING_URL } from './constants';
-import { ArrowDown } from 'lucide-react';
+import { TESTIMONIALS, SQUARE_BOOKING_URL } from './constants';
 
 function App() {
   // Setup intersection observer for fade-in animations on scroll
@@ -36,42 +37,7 @@ function App() {
 
       <main className="flex-grow">
         
-        {/* Hero Section */}
-        <section id="hero" className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-[20s] hover:scale-105" 
-            style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2000&auto=format&fit=crop")' }} 
-          >
-            {/* Overlay to ensure text contrast */}
-            <div className="absolute inset-0 bg-black/20 mix-blend-multiply"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/10"></div>
-          </div>
-          
-          <div className="relative z-10 text-center px-6 max-w-5xl mx-auto text-white animate-on-scroll pt-20">
-            <h2 className="text-xs md:text-sm uppercase tracking-[0.4em] mb-8 font-light opacity-90">
-              Waikiki, Hawaii
-            </h2>
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl mb-10 leading-[0.9] tracking-tight">
-              Moana <span className="italic font-light text-moana-cream">Beauty</span>
-            </h1>
-            <div className="w-24 h-[1px] bg-white/50 mx-auto mb-10"></div>
-            <p className="text-lg md:text-2xl font-light mb-12 max-w-2xl mx-auto opacity-90 font-serif italic">
-              "A sanctuary where clinically advanced skincare meets the art of relaxation."
-            </p>
-            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-              <Button href={SQUARE_BOOKING_URL} variant="primary" className="bg-white text-moana-black hover:bg-moana-gold hover:text-white border-none min-w-[200px]" target="_blank">
-                Book Treatment
-              </Button>
-              <Button href="#services" variant="outline" className="text-white border-white hover:bg-white hover:text-moana-black min-w-[200px]">
-                Our Menu
-              </Button>
-            </div>
-          </div>
-
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce text-white/50">
-            <ArrowDown size={20} strokeWidth={1} />
-          </div>
-        </section>
+        <Hero />
 
         {/* Brand Logos / As Seen In */}
         <section className="py-16 border-b border-moana-black/5 bg-white">
@@ -144,28 +110,8 @@ function App() {
              </div>
         </section>
 
-        {/* Services Grid */}
-        <section id="services" className="py-32 md:py-40 container mx-auto px-6 bg-white relative">
-            <div className="text-center max-w-3xl mx-auto mb-24 animate-on-scroll">
-                <span className="text-moana-gold text-[10px] uppercase tracking-[0.3em] font-bold mb-6 block">Curated Menu</span>
-                <h2 className="font-serif text-5xl md:text-6xl mb-8 text-moana-black">Services</h2>
-                <p className="text-gray-400 font-light text-lg">Hand-selected treatments designed for visible results and deep relaxation.</p>
-            </div>
+        <Services />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 animate-on-scroll">
-                {SERVICES.map(service => (
-                    <ServiceCard key={service.id} service={service} />
-                ))}
-            </div>
-
-            <div className="text-center mt-24 animate-on-scroll">
-                <Button href={SQUARE_BOOKING_URL} variant="outline" target="_blank" className="px-12">
-                    View Full Availability
-                </Button>
-            </div>
-        </section>
-
-        {/* Testimonials */}
         <section id="reviews" className="animate-on-scroll">
             <Testimonials testimonials={TESTIMONIALS} />
         </section>
@@ -191,6 +137,8 @@ function App() {
       </main>
 
       <Footer />
+      <BookingButton />
+
     </div>
   );
 }

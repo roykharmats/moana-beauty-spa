@@ -1,6 +1,6 @@
 import { Service, Testimonial, NavItem } from './types';
 
-export const SQUARE_BOOKING_URL = "https://squareup.com/appointments/book/YOUR_SQUARE_ID";
+export const SQUARE_BOOKING_URL = "https://book.squareup.com/appointments/j7u4v7gm70fn";
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#hero' },
